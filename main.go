@@ -43,7 +43,7 @@ func main() {
 
 	api.OnNewMessage(func(msg *vk.LPMessage) {
 		if msg.Flags&vk.FlagMessageOutBox ==0 {
-			if msg.FromID == 2000000009 && strings.HasPrefix(msg.Text,"/all")  {
+			if msg.FromID == <DIALOG_ID> && strings.HasPrefix(msg.Text,"/all")  {
 					//fmt.Println(msg.FromID)
 
 					if len(msg.Attachments)>1 {
