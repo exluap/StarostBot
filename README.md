@@ -11,12 +11,13 @@
 
 * Скачайте исходники бота с помощью `git clone https://github.com/exluap/starostbot`
 * В файле `main.go` замените `DIALOG_ID` (46 строка) на ID беседы в ВК следующего формата `2000000000+id` чтобы было, например `2000000009` где 9 - id диалога
+* Получите VK Access Token по ссылке `https://oauth.vk.com/authorize?client_id=6058624&scope=messages,offline&redirect_uri=http://api.vk.com/blank.html&display=page&response_type=token`
+* Скопируйте Access Token полученный в ссылке
 * Создайте файл config.json следующего содержания: 
 ```
 {
   "VK": {
-    "key": "ACCESS_TOKE",
-    "dialog": DIALOG_ID
+    "key": "ACCESS_TOKE"
   },
   "OneSignal": {
     "APP_KEY": "ONESIGNAL_APP_ID",
