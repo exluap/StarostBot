@@ -1,6 +1,6 @@
 workspace:
   base: /go
-  path: src/github.com/exluap/StarostBot
+  path: src/github.com/exluap
 pipeline:
   build:
     image: pipill/armhf-golang
