@@ -1,4 +1,4 @@
-# StarostBot
+# StarostBot [![Build Status](http://drone.exluap.xyz/api/badges/exluap/StarostBot/status.svg)(http://drone.exluap.xyz/exluap/StarostBot)
 Бот для уведомлений определенных сообщений ВК
 
 
