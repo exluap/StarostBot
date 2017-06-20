@@ -1,6 +1,10 @@
+workspace:
+  base: /go
+  path: src/github.com/exluap/StarostBot
 pipeline:
   build:
     image: pipill/armhf-golang
     commands:
-      - go get
+      - go get github.com/urShadow/go-vk-api
+      - go get github.com/exluap/onesignal-sdk-go
       - go build
