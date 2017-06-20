@@ -9,7 +9,7 @@ package PushNotification
 
 import (
 	"github.com/exluap/onesignal-sdk-go"
-	"StarostBot/tools"
+	"github.com/exluap/StarostBot/tools"
 	"fmt"
 	"log"
 )
