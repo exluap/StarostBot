@@ -12,8 +12,8 @@ import (
 	"log"
 	"fmt"
 	"strings"
-	"StarostBot/tools"
-	"StarostBot/PushNotification"
+	"github.com/exluap/StarostBot/tools"
+	"github.com/exluap/StarostBot/PushNotification"
 	"os"
 )
 
