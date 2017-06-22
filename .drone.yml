@@ -5,6 +5,5 @@ pipeline:
   build:
     image: pipill/armhf-golang
     commands:
-      - go get github.com/urShadow/go-vk-api
-      - go get github.com/exluap/onesignal-sdk-go
+      - go get
       - go build
