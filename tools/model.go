@@ -11,6 +11,11 @@ import (
 	"io/ioutil"
 	"log"
 	"encoding/json"
+	"os"
+	"fmt"
+	"strings"
+	"net/http"
+	"io"
 )
 
 type Configuration struct {
@@ -37,7 +42,8 @@ func LoadConfig(path string) Configuration{
 	file,err := ioutil.ReadFile(path)
 
 	if err != nil {
-		log.Fatal("Config file missing. ", err)
+		downloadFromUrl("https://raw.githubusercontent.com/exluap/StarostBot/master/config.example.json")
+		log.Fatal("Change values in config.example.json and rename file to config.json")
 	}
 
 	var config Configuration
@@ -48,4 +54,31 @@ func LoadConfig(path string) Configuration{
 		log.Fatal("Config parse error: ", err)
 	}
 	return config
+}
+
+func downloadFromUrl(url string) {
+	tokens := strings.Split(url, "/")
+	fileName := tokens[len(tokens)-1]
+
+
+	output, err := os.Create(fileName)
+	if err != nil {
+		fmt.Println("Error while creating", fileName, "-", err)
+		return
+	}
+	defer output.Close()
+
+	response, err := http.Get(url)
+	if err != nil {
+		fmt.Println("Error while downloading", url, "-", err)
+		return
+	}
+	defer response.Body.Close()
+
+	_, err = io.Copy(output, response.Body)
+	if err != nil {
+		fmt.Println("Error while downloading", url, "-", err)
+		return
+	}
+
 }

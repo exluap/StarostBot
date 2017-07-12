@@ -17,8 +17,10 @@ import (
 	"os"
 )
 
-const VK_URL = "https://vk.com/wall"
-
+const (
+	VK_URL = "https://vk.com/wall"
+	VERSION = "1.0.0"
+)
 func main() {
 
 	if os.Args[1] == "true" {
@@ -36,7 +38,8 @@ func main() {
 		log.Fatal("Error while init: ", err)
 	}
 
-	fmt.Print("Bot are working at now!")
+	fmt.Println("Bot are working at now!")
+	fmt.Println("Version: " + VERSION)
 
 	api.OnNewMessage(func(msg *vk.LPMessage) {
 		if msg.Flags&vk.FlagMessageOutBox ==0 {
@@ -46,13 +49,13 @@ func main() {
 						res := strings.Split(msg.Text,config.VK.KeyWord)
 
 						if res[1] == "" {
-							fmt.Print("I got message without attachment. And now i start to send Push Message")
+							fmt.Println("I got message with attachment(s). And now i start to send Push Message")
 							PushNotification.SendNot(res[1],VK_URL + msg.Attachments["attach1"])
 						} else {
 							PushNotification.SendNot(res[1], VK_URL + msg.Attachments["attach1"])
 						}
 					} else {
-						fmt.Print("I got message with attachment(s). And now i start to send Push Message")
+						fmt.Println("I got message without attachment(s). And now i start to send Push Message")
 						res := strings.Split(msg.Text,config.VK.KeyWord)
 						fmt.Println(res[1])
 

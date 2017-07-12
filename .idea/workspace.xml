@@ -9,9 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b67f1cc0-00de-455a-bb53-6ddf2f83875e" name="Default" comment="Добавил пример файла конфигурации">
+    <list default="true" id="b67f1cc0-00de-455a-bb53-6ddf2f83875e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compile.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/model.go" afterPath="$PROJECT_DIR$/tools/model.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
               <folding>
                 <element signature="e#186#347#0" expanded="true" />
               </folding>
@@ -35,19 +37,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compile.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="model.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/model.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="173">
+              <caret line="44" column="105" lean-forward="false" selection-start-line="44" selection-start-column="105" selection-end-line="44" selection-end-column="105" />
               <folding>
-                <element signature="e#187#234#0" expanded="true" />
+                <element signature="e#187#276#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OneSignal.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OneSignal.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PushNotification/OneSignal.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="986">
@@ -83,11 +95,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/s.go" />
-        <option value="$PROJECT_DIR$/tools/model.go" />
         <option value="$PROJECT_DIR$/PushNotification/OneSignal.go" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/compile.sh" />
+        <option value="$PROJECT_DIR$/tools/model.go" />
       </list>
     </option>
   </component>
@@ -130,6 +144,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StarostBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StarostBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StarostBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +308,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Изменил структуру файла настроек, изменил данные в настройках" />
     <MESSAGE value="Добавил пример файла конфигурации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил пример файла конфигурации" />
+    <MESSAGE value="Добавил комментарии для Windows Серверов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил комментарии для Windows Серверов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -302,7 +331,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -338,7 +367,7 @@
         <state relative-caret-position="360">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -374,7 +403,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -402,7 +431,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -430,7 +459,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -475,7 +504,7 @@
         <state relative-caret-position="255">
           <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,7 +524,7 @@
         <state relative-caret-position="510">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,7 +552,7 @@
         <state relative-caret-position="561">
           <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -540,14 +569,6 @@
     <entry file="file://$PROJECT_DIR$/s.go" />
     <entry file="file://$PROJECT_DIR$/s.go" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/PushNotification/OneSignal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="63" column="50" lean-forward="false" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.example.json" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,23 +578,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/model.go">
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="88">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <element signature="e#187#234#0" expanded="true" />
+            <element signature="e#186#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file://$PROJECT_DIR$/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="44" column="105" lean-forward="false" selection-start-line="44" selection-start-column="105" selection-end-line="44" selection-end-column="105" />
           <folding>
-            <element signature="e#186#347#0" expanded="true" />
+            <element signature="e#187#276#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PushNotification/OneSignal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="63" column="50" lean-forward="false" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
