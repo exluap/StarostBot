@@ -9,10 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b67f1cc0-00de-455a-bb53-6ddf2f83875e" name="Default" comment="Убрал аргументы, обновил файл компиляции">
+    <list default="true" id="b67f1cc0-00de-455a-bb53-6ddf2f83875e" name="Default" comment="Обновил файл компиляции и README">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +46,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="187">
+              <caret line="11" column="141" lean-forward="false" selection-start-line="11" selection-start-column="141" selection-end-line="11" selection-end-column="141" />
               <folding />
             </state>
           </provider>
@@ -343,7 +342,8 @@
     <MESSAGE value="Добавил комментарии для Windows Серверов" />
     <MESSAGE value="Добавил скрипт компиляции и автоскачивание файла конфигурации" />
     <MESSAGE value="Убрал аргументы, обновил файл компиляции" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал аргументы, обновил файл компиляции" />
+    <MESSAGE value="Обновил файл компиляции и README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил файл компиляции и README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -640,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="187">
+          <caret line="11" column="141" lean-forward="false" selection-start-line="11" selection-start-column="141" selection-end-line="11" selection-end-column="141" />
           <folding />
         </state>
       </provider>
