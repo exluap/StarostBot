@@ -14,7 +14,6 @@ import (
 	"strings"
 	"github.com/exluap/StarostBot/tools"
 	"github.com/exluap/StarostBot/PushNotification"
-	"os"
 )
 
 const (
@@ -22,11 +21,6 @@ const (
 	VERSION = "1.0.0"
 )
 func main() {
-
-	if os.Args[1] == "true" {
-		tools.Sharing = true
-	}
-
 
 	config:=tools.LoadConfig("config.example.json")
 
