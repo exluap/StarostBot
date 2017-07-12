@@ -1,12 +1,14 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;StarostBot&gt;">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../StarostBot" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
     </CLASSES>
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../../../StarostBot" />
+      <root url="file://$PROJECT_DIR$/../.." />
+      <root url="file://$PROJECT_DIR$/../../../golang.org" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />

@@ -14,15 +14,18 @@ import (
 )
 
 type Configuration struct {
-	OneSignal struct {
-		APPKEY  string `json:"APP_KEY"`
-		USERKEY string `json:"USER_KEY"`
-		RESTAPIKEY string `json:"REST_API_KEY"`
-	} `json:"OneSignal"`
 	VK struct {
-		Key string `json:"key"`
-		Dialog int `json:"dialog"`
-	} `json:"VK"`
+		   Key string `json:"key"`
+		   Dialog int64 `json:"dialog"`
+		   KeyWord string `json:"keyWord"`
+		   MessageWithAttachments string `json:"MessageWithAttachments"`
+		   MessageWithoutAttachments string `json:"MessageWithoutAttachments"`
+	   } `json:"VK"`
+	OneSignal struct {
+		   APPKEY string `json:"APP_KEY"`
+		   USERKEY string `json:"USER_KEY"`
+		   RESTAPIKEY string `json:"REST_API_KEY"`
+	   } `json:"OneSignal"`
 }
 
 var (

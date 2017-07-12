@@ -19,6 +19,8 @@ var (
 	appKey string
 	userKey string
 )
+
+
 func SendNot(news, url string) {
 	client := onesignal.NewClient(nil)
 	config := tools.LoadConfig("config.json")
@@ -26,15 +28,12 @@ func SendNot(news, url string) {
 	client.UserKey = config.OneSignal.USERKEY
 	client.AppKey = config.OneSignal.APPKEY
 	client.RestApiKey = config.OneSignal.RESTAPIKEY
-	createNotifications(client,config.OneSignal.APPKEY,news,url)
+	createNotifications(client,config.OneSignal.APPKEY,news,url, config.VK.MessageWithAttachments,config.VK.MessageWithoutAttachments)
 
 }
 
-func createNotifications(client *onesignal.Client, appID,news,url string) {
+func createNotifications(client *onesignal.Client, appID,news,url string, attachments string, withoutattachments string) {
 	fmt.Println("### CreateNotifications ###")
-
-	//playerID := "478bef3c-35d6-4a1c-b4f5-71a367784520" // valid
-	// playerID := "83823c5f-53ce-4e35-be6a-a3f27e5d838f" // invalid
 	if url == "" {
 		notificationReq := &onesignal.NotificationRequest{
 			AppID:            appID,
@@ -43,7 +42,7 @@ func createNotifications(client *onesignal.Client, appID,news,url string) {
 			IsAndroid:	  true,
 			IsAnyWeb:	  true,
 			IncludedSegments: []string{"All"},
-			Headings:	map[string]string{"en": "Написали какой-то текст от комитета.. Пиздос"},
+			Headings:	map[string]string{"en": withoutattachments},
 
 		}
 
@@ -63,7 +62,7 @@ func createNotifications(client *onesignal.Client, appID,news,url string) {
 				IsAndroid:	  true,
 				IsAnyWeb:	  true,
 				IncludedSegments: []string{"All"},
-				Headings:         map[string]string{"en": "Тут снова спам с шарингом из группы...."},
+				Headings:         map[string]string{"en": attachments},
 				URL:		url,
 
 			}

@@ -19,10 +19,6 @@ import (
 
 const VK_URL = "https://vk.com/wall"
 
-
-
-
-
 func main() {
 
 	if os.Args[1] == "true" {
@@ -43,22 +39,18 @@ func main() {
 
 	api.OnNewMessage(func(msg *vk.LPMessage) {
 		if msg.Flags&vk.FlagMessageOutBox ==0 {
-			if msg.FromID == 2 && strings.HasPrefix(msg.Text,"/all")  {
-					//fmt.Println(msg.FromID)
+			if msg.FromID == config.VK.Dialog && strings.HasPrefix(msg.Text,config.VK.KeyWord)  {
 
 					if len(msg.Attachments)>1 {
-						//fmt.Println(VK_URL + msg.Attachments["attach1"])
-						res := strings.Split(msg.Text,"/all")
-						//fmt.Println(res[1])
+						res := strings.Split(msg.Text,config.VK.KeyWord)
 
 						if res[1] == "" {
-							//fmt.Println("У нас в беседе появилось очередное говно. Нажми на уведомление и лицезрей это")
 							PushNotification.SendNot(res[1],VK_URL + msg.Attachments["attach1"])
 						} else {
 							PushNotification.SendNot(res[1], VK_URL + msg.Attachments["attach1"])
 						}
 					} else {
-						res := strings.Split(msg.Text,"/all")
+						res := strings.Split(msg.Text,config.VK.KeyWord)
 						fmt.Println(res[1])
 
 						PushNotification.SendNot(res[1], "")
