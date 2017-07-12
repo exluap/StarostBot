@@ -23,7 +23,7 @@ var (
 
 func SendNot(news, url string) {
 	client := onesignal.NewClient(nil)
-	config := tools.LoadConfig("config.json")
+	config := tools.LoadConfig("config.example.json")
 
 	client.UserKey = config.OneSignal.USERKEY
 	client.AppKey = config.OneSignal.APPKEY

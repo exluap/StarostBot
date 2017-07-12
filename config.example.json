@@ -1,0 +1,14 @@
+{
+  "VK": {
+    "key": "ACCESS_TOKEN",
+    "dialog": 123,
+    "keyWord": "/hello",
+    "MessageWithAttachments": "TITLE OF PUSH FOR MESSAGES WITH ATTACHMENTS",
+    "MessageWithoutAttachments": "TITLE OF PUSH FOR MESSAGES WITHOUT ATTACHMENTS"
+  },
+  "OneSignal": {
+    "APP_KEY": "ONESIGNAL_APP_ID",
+    "USER_KEY": "ONESIGNAL_USER_KEY",
+    "REST_API_KEY": "ONESIGNAL_APP_REST_KEY"
+  }
+}

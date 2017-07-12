@@ -26,7 +26,7 @@ func main() {
 	}
 
 
-	config:=tools.LoadConfig("config.json")
+	config:=tools.LoadConfig("config.example.json")
 
 	api := vk.New("ru")
 
